@@ -1,0 +1,25 @@
+{
+  "name": "Css-Tricks",
+  "component": false,
+  "license_url": null,
+  "about_url": null,
+  "authors": "Jordan Vidrine",
+  "theme_version": "1.0",
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "color_schemes": {
+      "C-trx-l": {
+        "primary": "292929",
+        "secondary": "ffffff",
+        "tertiary": "00aafb",
+        "quaternary": "fe8703",
+        "header_background": "ffffff",
+        "header_primary": "14151f",
+        "highlight": "dc53e5",
+        "danger": "ff2e28",
+        "success": "7fce30",
+        "love": "ff0077"
+    }
+  },
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}
