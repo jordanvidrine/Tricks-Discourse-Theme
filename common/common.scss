@@ -241,16 +241,13 @@ a.icon {
       }
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 750px) {
       width: auto;
       height: auto;
       justify-content: center;
       align-items: center;
       ul.branded-links li {
         display: none;
-      }
-      .logo {
-        font-size: 25px;
       }
     }
 
@@ -313,6 +310,7 @@ a.icon {
   
     .logo {
       font-family: 'Varela Round', sans-serif;
+      font-size: 24px;
       font-weight: bold;
       color: $secondary;
       margin: 0;
