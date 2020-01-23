@@ -840,6 +840,8 @@ pre {
   }
 }
 
+// POSTS
+
 // Highlight at top of post
 .moderator .regular > .cooked {
   border-radius: 4px;
@@ -850,4 +852,18 @@ pre {
 // Inner padding of topic post creates space for enlraged avatars
 .topic-body .regular {
   padding: 5px;
+}
+
+.fancy-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 22px;
+  }
 }
