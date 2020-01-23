@@ -867,3 +867,14 @@ pre {
     font-size: 22px;
   }
 }
+
+// Topic Lists Titles
+.title.raw-link {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  color: $primary;
+}
+
+tr.topic-list-item:nth-child(odd){
+  background-color: rgba($primary,.025);
+}
