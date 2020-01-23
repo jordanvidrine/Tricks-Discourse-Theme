@@ -116,20 +116,26 @@ a.icon {
   border-radius: 8px; 
   width: 100%;
   padding: 3em 3em 5%;
+
   .archetype-regular & {
     min-height: 500px;
   }
+
   @media screen and (max-width: 775px) {
     padding: 1.5em;
   }
+
   padding-bottom: 5% !important; //overriding inline style
   @include box-shadow;
+
   @media screen and (max-width: 1120px) {
     width: 80%;
   }
+
   @media screen and (max-width: 1075px) {
     width: 85%;
   }
+
 }
 
 .btn,
@@ -636,8 +642,7 @@ span.user-title {
 
 // Incrase width of 'Posters' section, increase avatar size
 .topic-list .posters {
-   width: 200px;
-
+   width: auto;
   & img.avatar {
     border-radius: 50% !important;
     // filter: grayscale(90%);
