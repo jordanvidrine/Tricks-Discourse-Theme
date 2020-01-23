@@ -200,7 +200,26 @@ a.icon {
   }
 
   &.draft, &.saving {
-    background-color: $primary-high;
+    background-color: $tertiary;
+    @include box-shadow(25)
+  }
+
+  // + create topic / save button
+  .save-or-cancel .create {
+    background-color: $primary-low;
+    border: 1px solid transparent;
+    color: $primary;
+    svg {
+      color: $primary;
+    }
+    &:hover {
+      background-color: $primary-medium;
+      color: $secondary;
+    }
+    &:active {
+      background-color: $primary-medium !important;
+      color: $secondary !important;
+    }
   }
 }
 
@@ -805,4 +824,30 @@ pre {
   background-color: white;
   @include ctrx-gradient($quaternary,$love,.2);
   border-radius: 8px;
+}
+
+// Abandon Post danger button
+.modal-footer .btn {
+  &.btn-danger {
+    background-color: $danger-medium;
+    border: 1px solid transparent;
+    &:hover {
+      background-color: $danger;
+    }
+  }
+  &.btn-default:hover {
+    background-color: $primary-medium;
+  }
+}
+
+// Highlight at top of post
+.moderator .regular > .cooked {
+  border-radius: 4px;
+  background-color: $secondary;
+  @include ctrx-gradient($quaternary,$love,.15);
+}
+
+// Inner padding of topic post creates space for enlraged avatars
+.topic-body .regular {
+  padding: 5px;
 }
