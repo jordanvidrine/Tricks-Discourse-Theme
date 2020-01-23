@@ -1,8 +1,8 @@
 {
   "name": "Css-Tricks",
   "component": false,
-  "license_url": null,
-  "about_url": null,
+  "license_url": "https://github.com/jordanvidrine/Tricks-Discourse-Theme/blob/master/License.md",
+  "about_url": "https://github.com/jordanvidrine/Tricks-Discourse-Theme",
   "authors": "Jordan Vidrine",
   "theme_version": "1.0",
   "minimum_discourse_version": null,
