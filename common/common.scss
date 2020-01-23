@@ -12,8 +12,8 @@ $ctrx-orange: #ff8a00;
 $ctrx-pink: #e52e71;
 $ctrx-bg: #201c29;
 
-@mixin ctrx-gradient($from: $ctrx-orange, $to: $ctrx-pink) {
-  background-image: linear-gradient(to right, $from, $to)
+@mixin ctrx-gradient($from: $ctrx-orange, $to: $ctrx-pink, $val: 1) {
+  background-image: linear-gradient(to right, rgba($from,$val), rgba($to,$val))
 }
 
 @keyframes logo-rotate {
@@ -186,10 +186,11 @@ a.icon {
   border-radius: 10px 10px 0 0;
   .select-kit.dropdown-select-box .dropdown-select-box-header {
     .d-icon {
-      color: $tertiary;
+      color: $primary-medium;
     }
     &:hover {
-      background: $tertiary-low;
+      background: $primary-medium;
+      border-radius: 0;
     }
   }
   .d-editor-button-bar {
@@ -197,7 +198,12 @@ a.icon {
       border: none;
     }
   }
+
+  &.draft, &.saving {
+    background-color: $primary-high;
+  }
 }
+
 
 .open .grippie {
   background: transparent;
@@ -777,4 +783,26 @@ pre {
   &.timeline-docked {
     top: 258px !important; // overwrite hardcoded style
   }
+}
+
+// Editor Button Bar
+.d-editor-button-bar {
+  & .btn {
+    border-radius: 0 0 0 0;
+  }
+  & .btn:hover {
+    border: none;
+    background-color: $primary-medium;
+    // @include ctrx-gradient($quaternary,$love,.5);
+  }
+  .btn svg.d-icon, .btn svg.d-icon:hover {
+    color: $primary-medium;
+  }
+}
+
+// Highlights
+.composer-popup {
+  background-color: white;
+  @include ctrx-gradient($quaternary,$love,.2);
+  border-radius: 8px;
 }
