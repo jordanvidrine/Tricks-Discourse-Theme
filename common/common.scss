@@ -16,6 +16,18 @@ $ctrx-bg: #201c29;
   background-image: linear-gradient(to right, $from, $to)
 }
 
+@keyframes logo-rotate {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(60deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
 body {
   background-color: $ctrx-bg;
 }
@@ -316,6 +328,7 @@ a.icon {
       margin: 0;
       svg {
         color: $ctrx-orange;
+        transition: all .5s ease-in-out;
       }
       &:hover {
         transform: scale(1.1)
@@ -710,10 +723,10 @@ pre {
 
 // Title of Post once scrolled up
 .extra-info-wrapper {
-  .topic-link span,
+  .topic-link,
   .categories-wrapper .category-name {
     font-weight: bold;
-    color: white;
+    color: $secondary;
     text-shadow: 0 1px 8px rgba(black, 0.18);
   }
   .topic-header-extra .discourse-tags .discourse-tag {
@@ -756,4 +769,12 @@ pre {
 // Home Icon style
 .fa.d-icon.d-icon-home.svg-icon.svg-node {
   color: white;
+}
+
+// Timeline margin updates
+.timeline-container {
+  top: 150px !important; // overwrite hardcoded style
+  &.timeline-docked {
+    top: 258px !important; // overwrite hardcoded style
+  }
 }
