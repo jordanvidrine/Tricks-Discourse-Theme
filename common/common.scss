@@ -642,7 +642,10 @@ span.user-title {
 
 // Incrase width of 'Posters' section, increase avatar size
 .topic-list .posters {
-   width: auto;
+  width: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
   & img.avatar {
     border-radius: 50% !important;
     // filter: grayscale(90%);
