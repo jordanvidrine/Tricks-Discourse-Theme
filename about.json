@@ -1,5 +1,5 @@
 {
-  "name": "Css-Tricks",
+  "name": "Css-Tricks-Light",
   "component": false,
   "license_url": "https://github.com/jordanvidrine/Tricks-Discourse-Theme/blob/master/License.md",
   "about_url": "https://github.com/jordanvidrine/Tricks-Discourse-Theme",
@@ -8,7 +8,7 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "color_schemes": {
-    "C-trx-l": {
+    "Css-Tricks-Light": {
       "primary": "292929",
       "secondary": "ffffff",
       "tertiary": "00aafb",
@@ -20,7 +20,7 @@
       "success": "7fce30",
       "love": "ff0077"
     },
-    "C-trx-d": {
+    "Css-Tricks-Dark": {
       "primary": "ffffff",
       "secondary": "292929",
       "tertiary": "00aafb",
