@@ -203,3 +203,15 @@ div[itemprop="mainContentOfPage"] {
     border: none;
   }
 }
+
+// Admin
+.admin-content {
+  margin-bottom: 50px;
+  padding: 10px;
+}
+  // charts
+.dashboard .charts .chart-canvas,
+.dashboard-next .charts .chart-canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
