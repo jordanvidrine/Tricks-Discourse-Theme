@@ -891,3 +891,17 @@ tr.topic-list-item:nth-child(odd){
 .discourse-no-touch .btn:hover, .discourse-no-touch .btn.btn-hover {
   background-color: $primary-medium;
 }
+
+.nav-stacked a.active {
+  background-color: $primary-medium;
+}
+
+.settings .setting.overridden h3 {
+  color: $primary;
+}
+
+.settings .setting.overridden.string input[type="text"],
+.settings .setting.overridden.string input[type="password"],
+.settings .setting.overridden.string textarea {
+  background-color: white;
+}
