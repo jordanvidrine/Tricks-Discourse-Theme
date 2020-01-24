@@ -4,8 +4,8 @@ $ctrx-orange: #ff8a00;
 $ctrx-pink: #e52e71;
 $ctrx-bg: #201c29;
 
-@mixin ctrx-gradient($from: $ctrx-orange, $to: $ctrx-pink, $val: .5) {
-  background-image: linear-gradient(to top, rgba($from,$val), rgba($to,$val))
+@mixin ctrx-gradient($direction: to top, $from: $ctrx-orange, $to: $ctrx-pink, $val: .5) {
+  background-image: linear-gradient($direction, rgba($from,$val), rgba($to,$val))
 }
 
 #main {
@@ -22,6 +22,10 @@ $ctrx-bg: #201c29;
   .list-controls {
     padding: 0 10px 0 10px;
   }
+}
+
+header.d-header, d.header {
+  box-shadow: none;
 }
 
 #reply-control {
@@ -74,5 +78,54 @@ a.icon {
   display: none;
 }
 
-// User Page
+// Spacing to containers of all sorts
+.container.viewing-self,
+.container.read-guidlines,
+.container.show-badge,
+.container.badges,
+.footer-message,
+.container.cakeday,
+.tag-list {
+  padding: 15px 10px;
+}
 
+.body-page .nav-pills, .cakeday .nav-pills {
+  padding: 15px 10px;
+  li a {
+    &.active {
+      background-color: white;
+      @include ctrx-gradient(to left);
+      color: $primary;
+    }
+  }
+}
+
+
+.user-info-empty-message {
+  padding: 30px 0;
+}
+
+.about {
+  padding: 0 10px;
+}
+
+// FAQ + About Page padding
+div[itemprop="mainContentOfPage"] {
+  padding: 0 10px;
+}
+
+// Cake day links
+
+
+// highlighted user
+
+
+.groups-header {
+  padding: 10px 0 0 10px;
+}
+
+.category-list-item {
+  margin-bottom: 0;
+  border-top: none !important;
+  border-bottom: 1px solid $primary-high !important;
+}
