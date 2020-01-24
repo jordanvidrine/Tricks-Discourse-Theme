@@ -148,6 +148,10 @@ div[itemprop="mainContentOfPage"] {
   }
 }
 
+.lightbox-wrapper img {
+  width: 100%;
+}
+
 .small-action-desc.timegap {
   padding: 10px;
 }
@@ -160,11 +164,12 @@ div[itemprop="mainContentOfPage"] {
     margin: 2px 0 0 0;
     width: 125px;
     height: 30px;
-    color: rgba($primary,.5);
+    color: rgba(black,.5);
     border: 1px solid rgba($love,.15);
     .nums {
       top: 6px;
     }
+    background-color: white;
     .bg {
       background-color: white;
       @include ctrx-gradient(to right, $quaternary,$love , .2);
@@ -178,7 +183,7 @@ div[itemprop="mainContentOfPage"] {
   #topic-progress {
     width: 125px;
     height: 30px;
-    color: rgba($primary,.5);
+    color: rgba(black,.5);
     border: 1px solid rgba($love,.15);
     .nums {
       top: 6px;
@@ -197,5 +202,4 @@ div[itemprop="mainContentOfPage"] {
     background-color: $primary-low-mid;
     border: none;
   }
-
 }
