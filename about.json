@@ -8,17 +8,29 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "color_schemes": {
-      "C-trx-l": {
-        "primary": "292929",
-        "secondary": "ffffff",
-        "tertiary": "00aafb",
-        "quaternary": "fe8703",
-        "header_background": "ffffff",
-        "header_primary": "14151f",
-        "highlight": "eea9f2",
-        "danger": "f56f6b",
-        "success": "7fce30",
-        "love": "ff0077"
+    "C-trx-l": {
+      "primary": "292929",
+      "secondary": "ffffff",
+      "tertiary": "00aafb",
+      "quaternary": "fe8703",
+      "header_background": "ffffff",
+      "header_primary": "14151f",
+      "highlight": "eea9f2",
+      "danger": "f56f6b",
+      "success": "7fce30",
+      "love": "ff0077"
+    },
+    "C-trx-d": {
+      "primary": "ffffff",
+      "secondary": "292929",
+      "tertiary": "00aafb",
+      "quaternary": "fe8703",
+      "header_background": "ffffff",
+      "header_primary": "14151f",
+      "highlight": "eea9f2",
+      "danger": "f56f6b",
+      "success": "7fce30",
+      "love": "ff0077"
     }
   },
   "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
