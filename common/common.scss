@@ -548,16 +548,16 @@ header.d-header {
 
 // Admin (Graceful)
 .admin-controls {
-  background: $tertiary-low;
+  background: $primary-low;
   .controls {
-    background: $tertiary-low;
+    background: $primary-low;
   }
   nav {
     background: $primary-low;
     &:before {
       background: linear-gradient(
         to right,
-        $tertiary-low 0%,
+        $primary-low 0%,
         rgba(234, 236, 238, 0) 100%
       );
     }
@@ -565,25 +565,25 @@ header.d-header {
       background: linear-gradient(
         to right,
         rgba(234, 236, 238, 0) 0%,
-        $tertiary-low 100%
+        $primary-low 100%
       );
     }
   }
 }
 
 .nav-stacked {
-  background: $tertiary-low;
+  background: $primary-low;
   li {
-    border-color: $tertiary-medium;
+    border-color: $primary-low-mid;
   }
 }
 
 .admin-detail {
-  border-color: $tertiary-medium;
+  border-color: $primary-low-mid;
 }
 
 .content-list ul li a:hover {
-  background: $tertiary-low;
+  background: $primary-low;
 }
 
 span.user-title {
@@ -597,7 +597,7 @@ span.user-title {
 }
 
 .uploaded-image-preview {
-  background: $tertiary-low;
+  background: $primary-low;
   border-radius: 4px;
 }
 
