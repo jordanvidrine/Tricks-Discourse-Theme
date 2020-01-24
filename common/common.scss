@@ -876,6 +876,14 @@ tr.topic-list-item:nth-child(odd){
 }
 
 // ADMIN PANEL
-.admin-controls nav {
-  background-color: rgba($primary,.025);
+.admin-customize .themes-list-header .tab.active {
+  color: $primary;
+  background-color: white;
+  @include ctrx-gradient($quaternary,$love,.75);
+}
+
+.admin-customize .themes-list-container .themes-list-item.selected {
+  color: $primary;
+  background-color: white;
+  @include ctrx-gradient($quaternary,$love,1);
 }
