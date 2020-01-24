@@ -362,7 +362,12 @@ a.icon {
 // === START - Header === //
 
 header.d-header {
-  @include ctrx-gradient;
+  @if ($secondary = "292929") {
+    background-color: black !important;
+    @include ctrx-gradient($ctrx-orange, $ctrx-pink,.90)
+  } @else {
+    @include ctrx-gradient;
+  }
   top: 0px;
   padding-top: 50px;
   padding-bottom: 5px;
@@ -748,7 +753,11 @@ pre {
   .categories-wrapper .category-name {
     font-weight: bold;
     color: $secondary;
-    text-shadow: 0 1px 8px rgba(black, 0.18);
+    @if ($secondary = "292929") {
+      text-shadow: none;
+    } @else {
+      text-shadow: 0 1px 8px rgba(black, 0.15);
+    }
   }
   .topic-header-extra .discourse-tags .discourse-tag {
     font-weight: lighter;
