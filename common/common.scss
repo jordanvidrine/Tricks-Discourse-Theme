@@ -879,11 +879,11 @@ tr.topic-list-item:nth-child(odd){
 .admin-customize .themes-list-header .tab.active {
   color: $primary;
   background-color: white;
-  @include ctrx-gradient($quaternary,$love,.75);
+  @include ctrx-gradient($quaternary,$love,.25);
 }
 
 .admin-customize .themes-list-container .themes-list-item.selected {
   color: $primary;
   background-color: white;
-  @include ctrx-gradient($quaternary,$love,1);
+  @include ctrx-gradient($quaternary,$love,.5);
 }
