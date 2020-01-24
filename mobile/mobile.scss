@@ -114,11 +114,14 @@ div[itemprop="mainContentOfPage"] {
   padding: 0 10px;
 }
 
-// Cake day links
-
-
 // highlighted user
-
+.user.me {
+  background-color: white;
+  @include ctrx-gradient(to bottom right, $ctrx-orange, $ctrx-pink, .15);
+  div.user-stat span {
+    color: $primary-high !important;
+  }
+}
 
 .groups-header {
   padding: 10px 0 0 10px;
