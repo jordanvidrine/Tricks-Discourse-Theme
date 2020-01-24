@@ -238,6 +238,8 @@ div[itemprop="mainContentOfPage"] {
 @media screen and (max-width: 768px) {
   .mobie-view .admin-main-nav {
     margin-left: 0px !important;
+    &::before {
+      margin-left: 0px !important;
+    }
   }
 }
-
