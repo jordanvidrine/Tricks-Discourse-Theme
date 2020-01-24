@@ -1,11 +1,18 @@
 @import "common/foundation/variables";
 
+
+// ---------DEFINITIONS--------- //
 $ctrx-orange: #ff8a00;
 $ctrx-pink: #e52e71;
 $ctrx-bg: #201c29;
 
 @mixin ctrx-gradient($direction: to top, $from: $ctrx-orange, $to: $ctrx-pink, $val: .5) {
   background-image: linear-gradient($direction, rgba($from,$val), rgba($to,$val))
+}
+// ---------------------------- //
+
+body {
+  background-color: $secondary;
 }
 
 #main {
@@ -24,6 +31,7 @@ $ctrx-bg: #201c29;
   }
 }
 
+// ---------HEADER------------- //
 header.d-header, d.header {
   box-shadow: none;
 }
@@ -34,10 +42,6 @@ header.d-header, d.header {
 
 .topic-list th, .topic-list td {
   padding: 7px 5px;
-}
-
-body {
-  background-color: $secondary;
 }
 
 .search-container {
@@ -68,11 +72,6 @@ a.icon {
   }
 }
 
-// Topic Title spacing
-#topic-title {
-  padding: 15px 10px;
-}
-
 // Stops the removal of icons in header once scrolled up
 .d-header .extra-info-wrapper + .panel .header-buttons, .d-header .extra-info-wrapper + .panel .d-header-icons {
   display: inline !important;
@@ -84,7 +83,17 @@ a.icon {
   display: none;
 }
 
-// Spacing to containers of all sorts
+// ---------------------------- //
+
+// Topic Title spacing
+#topic-title {
+  padding: 15px 10px;
+}
+
+// ---------MISC------------- //
+
+// Better Mobile Spacing
+
 .container.viewing-self,
 .container.read-guidlines,
 .container.show-badge,
@@ -95,17 +104,6 @@ a.icon {
   padding: 15px 10px;
 }
 
-.body-page .nav-pills, .cakeday .nav-pills {
-  padding: 15px 10px;
-  li a {
-    &.active {
-      background-color: white;
-      @include ctrx-gradient(to left);
-      color: $primary;
-    }
-  }
-}
-
 .user-info-empty-message {
   padding: 30px 0;
 }
@@ -114,28 +112,8 @@ a.icon {
   padding: 0 10px;
 }
 
-// FAQ + About Page padding
-div[itemprop="mainContentOfPage"] {
-  padding: 0 10px;
-}
-
-// highlighted user
-.user.me {
-  background-color: white;
-  @include ctrx-gradient(to bottom right, $ctrx-orange, $ctrx-pink, .15);
-  div.user-stat span {
-    color: $primary-high !important;
-  }
-}
-
 .groups-header {
   padding: 10px 0 0 10px;
-}
-
-.category-list-item {
-  margin-bottom: 0;
-  border-top: none !important;
-  border-bottom: 1px solid $primary-high !important;
 }
 
 // padding inside of topic
@@ -154,15 +132,50 @@ div[itemprop="mainContentOfPage"] {
   }
 }
 
-.lightbox-wrapper img {
-  width: 100%;
-}
-
+// '5 Months Later...' spacing
 .small-action-desc.timegap {
   padding: 10px;
 }
 
-// progress widget
+// Gradient on nav links
+.body-page .nav-pills, .cakeday .nav-pills {
+  padding: 15px 10px;
+  li a {
+    &.active {
+      background-color: white;
+      @include ctrx-gradient(to left);
+      color: $primary;
+    }
+  }
+}
+
+// FAQ + About Page padding
+div[itemprop="mainContentOfPage"] {
+  padding: 0 10px;
+}
+
+// Highlighted User BG
+.user.me {
+  background-color: white;
+  @include ctrx-gradient(to bottom right, $ctrx-orange, $ctrx-pink, .15);
+  div.user-stat span {
+    color: $primary-high !important;
+  }
+}
+
+// Category List Styling
+.category-list-item {
+  margin-bottom: 0;
+  border-top: none !important;
+  border-bottom: 1px solid $primary-high !important;
+}
+
+// Mobile Image in topic/reply sizing
+.lightbox-wrapper img {
+  width: 100%;
+}
+
+// Progress Widget Styling
 #topic-progress-wrapper:not(.docked) {
   margin: 0 0 5vw 0;
   right: 5vw !important;
@@ -210,12 +223,12 @@ div[itemprop="mainContentOfPage"] {
   }
 }
 
-// Admin
+// Admin Styling
 .admin-content {
   margin-bottom: 50px;
   padding: 10px;
 }
-  // charts
+  // Admin Charts
 .dashboard .charts .chart-canvas,
 .dashboard-next .charts .chart-canvas {
   width: 100% !important;
