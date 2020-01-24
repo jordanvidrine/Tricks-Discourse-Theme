@@ -52,8 +52,14 @@ body {
 // background opacity on slideout
 .header-cloak {
   top: 120px !important;
-  background-color: rgba($primary,.95);
-  @include ctrx-gradient;
+  @if ($secondary = "292929") {
+    opacity: .9 !important;
+    background-color: rgba($secondary,1);
+    @include ctrx-gradient(to top, $ctrx-orange, $ctrx-pink,.15);
+  } @else {
+    background-color: rgba($primary,.95);
+    @include ctrx-gradient;
+  }
 }
 
 a.icon {
