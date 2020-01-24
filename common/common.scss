@@ -333,7 +333,7 @@ a.icon {
   
     a {
       transition: all .15s ease-in-out;
-      color: $primary-low;
+      color: rgba(255,255,255,0.5);
       font-family: 'Rubik', sans-serif;
       font-weight: 100;
       font-size: 14px;
@@ -343,7 +343,7 @@ a.icon {
       font-family: 'Varela Round', sans-serif;
       font-size: 24px;
       font-weight: bold;
-      color: $secondary;
+      color: whitesmoke;
       margin: 0;
       svg {
         color: $ctrx-orange;
