@@ -234,12 +234,3 @@ div[itemprop="mainContentOfPage"] {
   width: 100% !important;
   height: 100% !important;
 }
-
-@media screen and (max-width: 768px) {
-  .mobie-view .admin-main-nav {
-    margin-left: 0px !important;
-    &::before {
-      margin-left: 0px !important;
-    }
-  }
-}
