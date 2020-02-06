@@ -1,0 +1,11 @@
+@mixin box-shadow($value: 8px) {
+    box-shadow: 0 1px $value rgba(black, 0.18);
+  }
+  
+  $ctrx-orange: #ff8a00;
+  $ctrx-pink: #e52e71;
+  $ctrx-bg: #201c29;
+  
+  @mixin ctrx-gradient($from: $ctrx-orange, $to: $ctrx-pink, $val: 1) {
+    background-image: linear-gradient(to right, rgba($from,$val), rgba($to,$val))
+  }

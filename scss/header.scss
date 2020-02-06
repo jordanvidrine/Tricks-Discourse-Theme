@@ -1,0 +1,39 @@
+@import "definitions";
+
+
+header.d-header {
+    @if ($secondary = "292929") {
+      background-color: black !important;
+      @include ctrx-gradient($ctrx-orange, $ctrx-pink,.90)
+    } @else {
+      @include ctrx-gradient;
+    }
+    top: 0px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    height: 65px;
+    @include box-shadow;
+    .contents {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  .d-header-icons .d-icon {
+    color: $secondary;
+  }
+  
+  .avatar {
+    border-radius: 50% !important;
+    border: 2px solid transparent;
+    transition: all .15s ease-in;
+  }
+  
+  .d-header-icons .icon:hover {
+    background-color: rgba($secondary,0.35);
+    border-radius: 4px;
+    .d-icon {
+      color: $secondary;
+    }
+  }
+  

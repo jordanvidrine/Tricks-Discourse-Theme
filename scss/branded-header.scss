@@ -1,0 +1,117 @@
+@import "definitions";
+
+.branded-header {
+    width: 100%;
+    height: 50px;
+    position:fixed;
+    z-index: 1001;
+    top: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    .branded-wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+  
+      @media screen and (max-width: 1120px) {
+        width: 80%;
+      }
+  
+      @media screen and (max-width: 900px) {
+        width: 85%;
+        ul.branded-links li a {
+          font-size: 10px;
+        }
+      }
+  
+      @media screen and (max-width: 750px) {
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        ul.branded-links li {
+          display: none;
+        }
+      }
+  
+      ul.branded-links {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        &:hover {
+          .article a { 
+            color: $quaternary;
+            transition: all .1s ease-in-out;
+          }
+          .video a { 
+            color: $love;
+            transition: all .2s ease-in-out;
+          }
+          .almanac a { 
+            color: $danger;
+            transition: all .3s ease-in-out;
+          }
+          .snippet a { 
+            color: $highlight;
+            transition: all .4s ease-in-out;
+          }
+          .newsletter a { 
+            color: $tertiary;
+            transition: all .5s ease-in-out;
+          }
+          .job a { 
+            color: $success-medium;
+            transition: all .6s ease-in-out;
+          }
+          .guide a { 
+            color: $success;
+            transition: all .7s ease-in-out;
+          }
+        }
+        li:hover {
+          background-color: rgba($secondary,.15);
+          padding: 14px;
+        }
+        li:nth-child(1){
+          padding: 14px;
+        }
+        li:nth-child(n+2) {
+          border-left: 1px solid $primary-high;
+          padding: 14px;
+        }
+      }
+    
+      a {
+        transition: all .15s ease-in-out;
+        color: rgba(255,255,255,0.5);
+        font-family: 'Rubik', sans-serif;
+        font-weight: 100;
+        font-size: 14px;
+      }
+    
+      .logo {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: whitesmoke;
+        margin: 0;
+        svg {
+          color: $ctrx-orange;
+          transition: all .5s ease-in-out;
+        }
+        &:hover {
+          transform: scale(1.1)
+        }
+      }
+    }
+  
+  }
